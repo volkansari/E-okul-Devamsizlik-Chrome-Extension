@@ -1,6 +1,5 @@
 
 let satirSayisi = document.querySelectorAll('#dgListe > tbody > tr').length;
-console.log(satirSayisi);
 
 for(i=2;i<=satirSayisi;++i){
     
