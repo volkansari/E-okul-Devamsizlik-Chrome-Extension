@@ -12,7 +12,7 @@
   
    "content_scripts":[
       {
-         "matches":["https://eokul.meb.gov.tr/*"],
+         "matches":["https://e-okul.meb.gov.tr/*"],
          "js": ["content.js"]
       }
    ]
