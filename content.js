@@ -1,9 +1,9 @@
 // Satır sayısını al
-var satirSayisi = document.querySelectorAll('#dgListe > tbody > tr').length;
+var rowCount = document.querySelectorAll('#dgListe > tbody > tr').length;
 console.log(satirSayisi);
 
 // Satırları döngü ile işle
-for (var i = 0; i < satirSayisi; i++) {
+for (var i = 0; i < rowCount; i++) {
     // Checkbox'ları seç
     var yarimGunCheckbox = document.getElementById('dgListe_chkYarimGun_' + i);
     var tamGunCheckbox = document.getElementById('dgListe_chkTamGun_' + i);
@@ -17,7 +17,6 @@ for (var i = 0; i < satirSayisi; i++) {
     // Devamsızlık hücresini seç
     var devamsizlikCell = document.querySelector('#dgListe > tbody > tr:nth-child(' + (i + 1) + ') > td:nth-child(10)');
     if (!devamsizlikCell) {
-        console.warn('Devamsizlik cell for row ' + (i + 1) + ' not found');
         continue;
     }
 
