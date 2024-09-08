@@ -1,41 +1,44 @@
+// Satır sayısını al
+var satirSayisi = document.querySelectorAll('#dgListe > tbody > tr').length;
+console.log(satirSayisi);
 
-let satirSayisi = document.querySelectorAll('#dgListe > tbody > tr').length;
+// Satırları döngü ile işle
+for (var i = 0; i < satirSayisi; i++) {
+    // Checkbox'ları seç
+    var yarimGunCheckbox = document.getElementById('dgListe_chkYarimGun_' + i);
+    var tamGunCheckbox = document.getElementById('dgListe_chkTamGun_' + i);
 
-for(i=2;i<=satirSayisi;++i){
-    
-    console.log(`dgListe_chkYarimGun_${i-2}`);
-let devamsizlik = document.querySelector("#dgListe > tbody > tr:nth-child("+i+") > td:nth-child(10)").textContent.replace(/\n/g, '');
-let arr =String(devamsizlik).split(',');
-var index=0;
+    // Eğer checkbox'lar bulunamazsa, uyarı ver ve bir sonraki satıra geç
+    if (!yarimGunCheckbox || !tamGunCheckbox) {
+        console.warn('Tablodaki' + i + ' satır bulunamadı');
+        continue;
+    }
 
-if(arr[0]=='\xa0')
-{
-    index=0;
+    // Devamsızlık hücresini seç
+    var devamsizlikCell = document.querySelector('#dgListe > tbody > tr:nth-child(' + (i + 1) + ') > td:nth-child(10)');
+    if (!devamsizlikCell) {
+        console.warn('Devamsizlik cell for row ' + (i + 1) + ' not found');
+        continue;
+    }
 
+    // Devamsızlık verisini al ve temizle
+    var devamsizlik = devamsizlikCell.textContent.trim();
+    var arr = devamsizlik.split(',');
+
+    // Devamsızlık veri uzunluğunu belirle
+    var index = arr[0] === '\xa0' ? 0 : arr.length;
+
+    console.log(index);
+
+    // Checkbox'ları işaretle
+    if (index > 0 && index < 7) {
+        yarimGunCheckbox.checked = true;
+        tamGunCheckbox.checked = false;
+    } else if (index > 6) {
+        yarimGunCheckbox.checked = false;
+        tamGunCheckbox.checked = true;
+    } else {
+        yarimGunCheckbox.checked = false;
+        tamGunCheckbox.checked = false;
+    }
 }
-else
-{index=arr.length;}
-
-
-console.log(index);
-
-if(index>0&&index<7){
-    document.getElementById(`dgListe_chkYarimGun_${i-2}`).checked=true;
-    document.getElementById(`dgListe_chkTamGun_${i-2}`).checked=false;
-
-}else if(index>6){
-
-
-    document.getElementById(`dgListe_chkYarimGun_${i-2}`).checked=false;
-    document.getElementById(`dgListe_chkTamGun_${i-2}`).checked=true;
-
-}else{
-    document.getElementById(`dgListe_chkYarimGun_${i-2}`).checked=false;
-    document.getElementById(`dgListe_chkTamGun_${i-2}`).checked=false;
-
- 
-}
-
-}
-
-
