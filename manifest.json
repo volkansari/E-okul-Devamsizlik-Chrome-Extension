@@ -1,19 +1,29 @@
 {
-   "name": "Devamsızlık İşleyici",
-   "description": "E-Öğretmen Devamsızlık İşleme Aracı-by VS",
-   "version": "1.0",
-   "manifest_version": 3,
-   "background": {
-      "service_worker": "background.js"
-   },
-   "permissions": [
-      "activeTab"
-    ],
-  
-   "content_scripts":[
-      {
-         "matches":["https://e-okul.meb.gov.tr/*"],
-         "js": ["content.js"]
-      }
-   ]
+  "manifest_version": 3,
+  "name": "Devamsizlik Bot",
+  "version": "1.0",
+  "permissions": ["tabs", "scripting", "storage"],
+  "host_permissions": [
+    "https://e-okul.meb.gov.tr/IlkOgretim/OKL/IOK08001.aspx*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://e-okul.meb.gov.tr/IlkOgretim/OKL/IOK08001.aspx*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
 }
