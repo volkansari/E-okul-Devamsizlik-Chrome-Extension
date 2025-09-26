@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Devamsizlik Bot",
+  "name": "E-Okul Devamsızlık İşaretleme Botu",
   "version": "1.0",
   "permissions": ["tabs", "scripting", "storage"],
   "host_permissions": [
