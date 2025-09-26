@@ -1,14 +1,8 @@
-# E-okul-Devamsizlik
-Eokula e-Okul Öğretmen üzerinden girilen devamsızlıkları otomatik işaretleyen chrome eklentisi
-
-
-
-
 # 📌 E-okul Devamsızlık Otomatik İşaretleyici
 
 🧑‍🏫 **E-okul Devamsızlık**, MEB e-Okul sisteminde öğretmen modülüne girilen yoklamaları otomatik olarak işaretleyen bir **Chrome eklentisidir**.
 
-Bu eklenti sayesinde her öğrenci için tek tek yoklama işaretlemek zorunda kalmadan, sınıfın devamsızlık durumu otomatik olarak doldurulur. Basit, hızlı ve güvenlidir.
+Bu eklenti sayesinde her öğrenci için tek tek yoklama işaretlemek zorunda kalmadan, tüm okulun devamsızlık durumu otomatik olarak doldurulur. Basit, hızlı ve güvenlidir.
 
 ---
 
