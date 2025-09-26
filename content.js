@@ -161,10 +161,8 @@ async function islemYap() {
     const yarimCheckbox = document.getElementById(`dgListe_chkYarimGun_${index - 1}`);
     const tamCheckbox = document.getElementById(`dgListe_chkTamGun_${index - 1}`);
 
-    if (!isNaN(okulno) && okulno >= 2000) {
-      if (yarimCheckbox && yarimCheckbox.checked) yarimCheckbox.click();
-      if (tamCheckbox && !tamCheckbox.checked) tamCheckbox.click();
-    } else {
+  
+    
       if (devamsizlikSayisi > 0 && devamsizlikSayisi < 7) {
         if (yarimCheckbox && !yarimCheckbox.checked) yarimCheckbox.click();
         if (tamCheckbox && tamCheckbox.checked) tamCheckbox.click();
@@ -176,7 +174,7 @@ async function islemYap() {
         if (tamCheckbox && tamCheckbox.checked) tamCheckbox.click();
       }
     }
-  }
+  
 
   
 }
