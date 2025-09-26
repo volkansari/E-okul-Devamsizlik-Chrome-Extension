@@ -14,7 +14,7 @@ Bu eklenti sayesinde her öğrenci için tek tek yoklama işaretlemek zorunda ka
 
 ## 🚀 Özellikler
 
-- ✅ e-Okul öğretmen paneli ile uyumlu
+- ✅ e-Okul Kurum Devamsızlık paneli ile uyumlu
 - ✅ Öğrenci listesinde devamsızlık kutularını otomatik işaretler
 - ✅ Kullanıcı dostu arayüz
 - ✅ Manuel veya toplu seçim seçenekleri (güncellemeyle eklenebilir)
