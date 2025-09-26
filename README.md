@@ -40,7 +40,7 @@ Bu eklenti sayesinde her öğrenci için tek tek yoklama işaretlemek zorunda ka
 
 ```bash
 git clone https://github.com/kullaniciadi/E-okul-Devamsizlik.git
-
+```
 
 Alternatif olarak, sağ üstten Code > Download ZIP ile projeyi indirip çıkarabilirsiniz.
 
@@ -50,3 +50,39 @@ Sağ üstteki **"Geliştirici modu"**nu etkinleştirin.
 "Paketlenmemiş öğe yükle" butonuna tıklayın.
 Bu klasörü seçin: E-okul-Devamsizlik/
 🎉 Eklenti artık tarayıcınızda aktif!
+
+▶️ Kullanım
+
+e-Okul Öğretmen Girişi sayfasına gidin.
+
+İlgili sınıfın devamsızlık ekranını açın.
+
+Chrome araç çubuğundaki eklentiyi tıklayın.
+
+Eklenti devamsızlık alanlarını otomatik olarak işaretleyecektir.
+
+Gerekirse elle düzenleme yapabilirsiniz.
+
+⚠️ Uyarılar
+
+Bu eklenti yalnızca kurum idarecileri için geliştirilmiştir.
+
+MEB sisteminde yapılan değişikliklerde eklenti çalışmayabilir. Geliştirici güncelleme yapana kadar beklemeniz gerekebilir.
+
+Eklenti, resmi bir kurum tarafından geliştirilmemiştir. Kullanım tamamen kişisel sorumluluktadır.
+
+🛠️ Geliştirici Notu
+
+Proje açık kaynaklıdır. Her türlü katkıya açıktır. Pull request göndererek geliştirmeye destek olabilirsiniz.
+
+📄 Lisans
+
+Bu proje MIT lisansı ile lisanslanmıştır. Detaylar için LICENSE dosyasına bakınız.
+
+🙋 Sık Sorulan Sorular
+
+Q: Eklenti neden otomatik yüklenmiyor?
+A: Chrome, mağaza dışı yüklemelerde manuel kurulum zorunluluğu getirir. Bu nedenle Geliştirici Modu kullanılır.
+
+Q: e-Okul sisteminde güncelleme oldu, eklenti çalışmıyor.
+A: Lütfen GitHub Issues kısmından durumu bildirin, güncelleme yapılacaktır.
